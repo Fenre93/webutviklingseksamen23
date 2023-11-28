@@ -24,10 +24,8 @@
       <a href="index.html"><img src="public/logo1.png" data-size="small" /></a>
       <nav>
         <ul class="flex" data-column-mobile>
-          <li><a href="./index.html" data-link-button>Home</a></li>
-          <li aria-current>
-            <a href="./portfolio.html" data-link-button>Portfolio</a>
-          </li>
+          <li aria-current><a href="./index.html" data-link-button>Home</a></li>
+          <li><a href="./portfolio.html" data-link-button>Portfolio</a></li>
           <li><a href="./about.html" data-link-button>About</a></li>
           <li>
             <a
@@ -41,25 +39,27 @@
       </nav>
     </header>
     <main>
-      <section data-padding-top data-padding-bottom data-background="lightgray">
+      <section
+        data-padding-top
+        data-padding-bottom
+        class="background_image_index"
+      >
         <h1>Compeling headline</h1>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris Lorem ipsum
-          dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris
+          minim veniam, quis nostrud exercitation ullamco laboris
         </p>
         <a
-          data-yellow
+          data-color="yellow"
           data-link-button
           role="button"
-          role="button"
+          type="button"
           href="#SERVICES"
           >Read more about our services</a
         >
       </section>
+
       <section data-padding-top data-padding-bottom class="second_section">
         <h2>Engaging subheading. What can you help your visitors with</h2>
         <p>
@@ -78,22 +78,20 @@
         data-align="start"
       >
         <div class="flex text-align-start">
-          <img class="third_section_image" />
+          <img data-size="large" />
           <div>
-            <h2>About Our Company</h2>
+            <h3>About Our Company</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              Lorem ipsum dolor sit amet, conliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris
             </p>
             <a
               role="button"
               type="button"
               href="./about.html"
               data-link-button
-              data-yellow
+              data-color="yellow"
               data-border
               >Read more about us</a
             >
@@ -102,58 +100,53 @@
       </section>
       <h2 data-padding-bottom="large" id="SERVICES">Our services</h2>
       <section data-padding-bottom>
-        <ul data-justify="center">
+        <ul class="flex" data-justify="center">
           <li>
             <i class="fa-solid fa-people-group fa-2xl"></i>
-            <h3 data-no-spacing>Branding</h3>
+            <h3>Branding</h3>
             <p>Lorem ipsum dolor sit amet connectetur adapiscing eit</p>
           </li>
           <li>
-            <i data-no-spacing class="fa-solid fa-cloud-arrow-up fa-2xl"></i>
-            <h3 data-no-spacing>Design</h3>
+            <i class="fa-solid fa-cloud-arrow-up fa-2xl"></i>
+            <h3>Design</h3>
             <p>Lorem ipsum dolor sit amet connectetur adapiscing eit</p>
           </li>
           <li>
             <i class="fa-solid fa-code fa-2xl"></i>
-            <h3 data-no-spacing>Development</h3>
+            <h3>Development</h3>
             <p>Lorem ipsum dolor sit amet connectetur adapiscing eit</p>
           </li>
           <li>
             <i class="fa-solid fa-wifi fa-2xl"></i>
-            <h3 data-no-spacing>Support</h3>
+            <h3>Support</h3>
             <p>Lorem ipsum dolor sit amet connectetur adapiscing eit</p>
           </li>
         </ul>
       </section>
-      <section
-        data-cover-width
-        data-padding-top
-        data-padding-bottom
-        data-background="lightgray"
-      >
+      <section data-padding-bottom data-background="lightgray">
         <h2>Sign up for our newsletter</h2>
-        <input type="email" data-higher /><button data-yellow data-no-border>
-          Sign me up
-        </button>
+        <input type="email" /><button data-color="yellow">Sign me up</button>
       </section>
     </main>
     <footer>
-      <img src="public/logo1.png" />
+      <a href="./index.html"
+        ><img src="public/logo1.png" data-size="small" alt="Company logo"
+      /></a>
       <span>Company copyright 2023</span>
       <nav>
-        <ul data-row>
+        <ul class="flex" data-row>
           <li>
-            <a href="https://www.facebook.com"
+            <a href="https://www.facebook.com" aria-label="Facebook"
               ><i data-color="white" class="fa-brands fa-facebook fa-2xl"></i
             ></a>
           </li>
           <li>
-            <a href="https://www.instagram.com"
+            <a href="https://www.instagram.com" aria-label="Instagram"
               ><i data-color="white" class="fa-brands fa-instagram fa-2xl"></i
             ></a>
           </li>
           <li>
-            <a href="https://www.linkedin.com"
+            <a href="https://www.linkedin.com" aria-label="Linkedin"
               ><i data-color="white" class="fa-brands fa-linkedin fa-2xl"></i
             ></a>
           </li>
