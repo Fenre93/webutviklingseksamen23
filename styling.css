@@ -93,6 +93,10 @@ li {
 
 /** Images **/
 img {
+  max-height: 100%;
+  max-width: 100%;
+  flex-grow: 1;
+
   &[data-size="small"] {
     height: 75px;
   }
@@ -107,11 +111,13 @@ img {
   &[data-size="xsmall"] {
     height: var(--spacing-ekstra-large);
     width: var(--spacing-ekstra-large);
+    flex-grow: unset;
   }
 }
 
 i {
   height: var(--spacing-normal);
+  max-height: 100%;
 
   &[data-color="white"] {
     color: var(--white);
@@ -125,17 +131,18 @@ i {
 /** Cards  **/
 article {
   font-weight: 700;
-  flex-grow: 1;
   text-align: start;
-  min-width: 250px;
   max-width: 692px;
   max-height: 692px;
-  /* instead of using a real picture, i'm lazy. */
 
   &:hover {
     transform: translate3D(0, -1px, 0) scale(1.03);
     transition: all 0.6s ease;
   }
+}
+
+iframe {
+  width: 100%;
 }
 
 /** User input styling **/
