@@ -16,18 +16,27 @@
     />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
     />
   </head>
   <body>
     <header>
-      <a href="index.html"><img src="public/logo1.png" /></a>
+      <a href="index.html"><img src="public/logo1.png" data-size="small" /></a>
       <nav>
-        <ul>
-          <li aria-current><a href="./index.html">Home</a></li>
-          <li><a href="./portfolio.html">Portfolio</a></li>
-          <li><a href="./about.html">About</a></li>
-          <li><a href="./about.html#CONTACT_US">Contact</a></li>
+        <ul class="flex" data-column-mobile>
+          <li><a href="./index.html" data-link-button>Home</a></li>
+          <li aria-current>
+            <a href="./portfolio.html" data-link-button>Portfolio</a>
+          </li>
+          <li><a href="./about.html" data-link-button>About</a></li>
+          <li>
+            <a
+              href="./about.html#CONTACT_US"
+              data-link-button
+              data-color="yellow"
+              >Contact</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
