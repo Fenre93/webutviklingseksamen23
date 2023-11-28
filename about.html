@@ -21,19 +21,32 @@
   </head>
   <body>
     <header>
-      <a href="index.html"><img src="public/logo1.png" /></a>
+      <a href="index.html"><img src="public/logo1.png" data-size="small" /></a>
       <nav>
-        <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./portfolio.html">Portfolio</a></li>
-          <li aria-current><a href="./about.html">About</a></li>
-          <li><a href="./about.html#CONTACT_US">Contact</a></li>
+        <ul class="flex" data-column-mobile>
+          <li><a href="./index.html" data-link-button>Home</a></li>
+          <li><a href="./portfolio.html" data-link-button>Portfolio</a></li>
+          <li aria-current>
+            <a href="./about.html" data-link-button>About</a>
+          </li>
+          <li>
+            <a
+              href="./about.html#CONTACT_US"
+              data-link-button
+              data-color="yellow"
+              >Contact</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
     <main>
-      <section class="first_section_about">
-        <div class="flex" data-column>
+      <section
+        class="background_image_about"
+        data-padding-top
+        data-padding-bottom
+      >
+        <div class="flex" data-column data-align="center">
           <h1 data-no-spacing>About our company</h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -45,7 +58,7 @@
             culpa qui officia deserunt mollit anim id est laborum.
           </p>
           <a
-            data-yellow
+            data-color="yellow"
             role="button"
             type="button"
             data-link-button
@@ -54,28 +67,28 @@
           >
         </div>
       </section>
-      <section data-padding-top data-padding-bottom>
+      <section data-padding-bottom>
         <h2 data-padding-bottom="large">Our Services</h2>
-        <ul data-justify="center">
+        <ul class="flex" data-justify="center">
           <li>
             <i class="fa-solid fa-people-group fa-2xl"></i>
-            <h3 data-no-spacing>Branding</h3>
+            <h3>Branding</h3>
 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
           </li>
           <li>
             <i class="fa-solid fa-cloud-arrow-up fa-2xl"></i>
-            <h3 data-no-spacing>Branding</h3>
+            <h3>Branding</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
           </li>
           <li>
             <i class="fa-solid fa-code fa-2xl"></i>
-            <h3 data-no-spacing>Branding</h3>
+            <h3>Branding</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
           </li>
           <li>
             <i class="fa-solid fa-wifi fa-2xl"></i>
-            <h3 data-no-spacing>Branding</h3>
+            <h3>Branding</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
           </li>
         </ul>
@@ -83,12 +96,12 @@
       <section data-padding-top data-padding-bottom data-background="yellow">
         <h2 data-padding-bottom="normal">Some of our clients</h2>
         <div class="flex" data-justify="center" data-wrap>
-          <img src="./public/logo1.png" data-size="large" />
-          <img src="./public/logo2.png" data-size="large" />
-          <img src="./public/logo3.png" data-size="large" />
+          <img src="./public/logo1.png" data-size="xsmall" />
+          <img src="./public/logo2.png" data-size="xsmall" />
+          <img src="./public/logo3.png" data-size="xsmall" />
         </div>
       </section>
-      <section data-padding-top data-padding-bottom data-background="lightgray">
+      <section data-padding-bottom data-background="lightgray">
         <h2 id="CONTACT_US">Contact us</h2>
         <div class="grid side-padding text-align-start" data-grid="2">
           <form class="flex" data-gap="none" data-column>
@@ -96,7 +109,13 @@
             <label>Name</label><input placeholder="Ola Normann" />
             <label>Subject</label><input placeholder="Branding" />
             <label>Message</label><textarea data-large></textarea>
-            <button data-yellow data-no-border>Send message</button>
+            <button
+              aria-label="Send us a message"
+              data-color="yellow"
+              data-no-border
+            >
+              Send message
+            </button>
           </form>
           <div>
             <h3>Contact information</h3>
@@ -133,35 +152,35 @@
           </div>
         </div>
       </section>
-      <section>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8188.024646170659!2d11.353350468473257!3d59.13229710859013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f0d344246f%3A0x4e47f19c99b253b1!2zSMO4Z3Nrb2xlbiBpIMOYc3Rmb2xk!5e0!3m2!1sno!2sno!4v1700682018918!5m2!1sno!2sno"
-          width="100%"
-          height="200"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </section>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8188.024646170659!2d11.353350468473257!3d59.13229710859013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464412f0d344246f%3A0x4e47f19c99b253b1!2zSMO4Z3Nrb2xlbiBpIMOYc3Rmb2xk!5e0!3m2!1sno!2sno!4v1700682018918!5m2!1sno!2sno"
+        width="100%"
+        height="200"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
     </main>
     <footer>
-      <img src="public/logo1.png" />
+      <a href="./index.html"
+        ><img src="public/logo1.png" data-size="small" alt="Company logo"
+      /></a>
       <span>Company copyright 2023</span>
       <nav>
-        <ul data-row>
+        <ul class="flex" data-row>
           <li>
-            <a href="https://www.facebook.com"
+            <a href="https://www.facebook.com" aria-label="Facebook"
               ><i data-color="white" class="fa-brands fa-facebook fa-2xl"></i
             ></a>
           </li>
           <li>
-            <a href="https://www.instagram.com"
+            <a href="https://www.instagram.com" aria-label="Instagram"
               ><i data-color="white" class="fa-brands fa-instagram fa-2xl"></i
             ></a>
           </li>
           <li>
-            <a href="https://www.linkedin.com"
+            <a href="https://www.linkedin.com" aria-label="Linkedin"
               ><i data-color="white" class="fa-brands fa-linkedin fa-2xl"></i
             ></a>
           </li>
